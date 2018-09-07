@@ -27,7 +27,7 @@ public class GripperMoveJoint extends Command {
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return (!RobotMap.jointSwitch.get() && Robot.oi.secondary.getRawAxis(2)-Robot.oi.secondary.getRawAxis(3)<0);
+        return (!RobotMap.jointSwitch.get() && Robot.oi.secondary.getRawAxis(2)-Robot.oi.secondary.getRawAxis(3)==0);
     }
 
     // Called once after isFinished returns true
