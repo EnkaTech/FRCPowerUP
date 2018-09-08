@@ -17,7 +17,7 @@ public class AutonomousCommand extends CommandGroup {
 	        	
 	        	case 'L':
 	        		addSequential(new Grip(0.6), 0.3);
-	        		addSequential(new Gyroverse(6, false));
+	        		addSequential(new Gyroverse(5, false));
 	        		addSequential(new GyroTurn(90));
 	        		addSequential(new Gyroverse(1, false));
 	        		addSequential(new RemGripperTimed(1,-0.5));
@@ -37,28 +37,28 @@ public class AutonomousCommand extends CommandGroup {
     		switch(DriverStation.getInstance().getGameSpecificMessage().charAt(0)) {
     		case 'R':
 		        	addSequential(new Grip(0.6), 0.3);
-		        	addSequential(new Gyroverse(0.7, false));
+		        	addSequential(new Gyroverse(0.5, false));
 		        	addSequential(new GyroTurn(40));
-		        	addSequential(new Gyroverse(3.4, false));
+		        	addSequential(new Gyroverse(3.2, false));
 		        	addSequential(new GyroTurn(-40));
-		        	addSequential(new Gyroverse(2, false));
+		        	addSequential(new Gyroverse(1.8, false));
 		        	addSequential(new RemGripperTimed(1,-0.5));
 		        	addSequential(new Grip(-0.6));
-		        	addSequential(new Gyroverse(0.3,false));
-		        	addSequential(new Gyroverse(0.3,true));
+		        	addSequential(new Gyroverse(0.2,false));
+		        	addSequential(new Gyroverse(0.2,true));
 		        	break;
     		
     		case 'L': 
 		        	addSequential(new Grip(0.6), 0.3);
-		        	addSequential(new Gyroverse(0.7, false));
+		        	addSequential(new Gyroverse(0.5, false));
 		            addSequential(new GyroTurn(-40));
-		            addSequential(new Gyroverse(3.4, false));
+		            addSequential(new Gyroverse(3.2, false));
 		            addSequential(new GyroTurn(40));
-		            addSequential(new Gyroverse(2, false));
+		            addSequential(new Gyroverse(1.8, false));
 		            addSequential(new RemGripperTimed(1,-0.5));
 		            addSequential(new Grip(-0.6));
-		            addSequential(new Gyroverse(0.3,false));
-		            addSequential(new Gyroverse(0.3,true));
+		            addSequential(new Gyroverse(0.2,false));
+		            addSequential(new Gyroverse(0.2,true));
 		            break;
     		}
                 break;
@@ -70,7 +70,7 @@ public class AutonomousCommand extends CommandGroup {
     				break;
     			case 'R':
 		    		addSequential(new Grip(0.6), 0.3);
-		    		addSequential(new Gyroverse(6, false));
+		    		addSequential(new Gyroverse(5, false));
 		    		addSequential(new GyroTurn(-90));
 		    		addSequential(new Gyroverse(1, false));
 		    		addSequential(new RemGripperTimed(1,-0.5));

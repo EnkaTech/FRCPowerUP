@@ -57,6 +57,7 @@ public class Robot extends TimedRobot {
 		oi.gyro.calibrate();
 		UsbCamera camera = CameraServer.getInstance().startAutomaticCapture();
 		camera.setVideoMode(VideoMode.PixelFormat.kYUYV,320,180,30);
+		SmartDashboard.putData("Autonomous",autoChooser);
 		autoChooser.addObject("Station 1-Left", 1);
 		autoChooser.addDefault("Station 2-Middle", 2);
 		autoChooser.addObject("Station 3-Right", 3);
